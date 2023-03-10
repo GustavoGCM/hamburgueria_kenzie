@@ -86,6 +86,7 @@ export const UserProvider = ({ children }: iChildren) => {
   const logout = () => {
     localStorage.removeItem('@TOKEN');
     setLogin(null)
+    setUser(null)
     navigate('/');
   };
 
