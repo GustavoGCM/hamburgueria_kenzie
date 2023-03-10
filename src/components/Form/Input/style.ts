@@ -1,4 +1,5 @@
-import styled from "styled-components";
+/* eslint-disable import/no-extraneous-dependencies */
+import styled from "styled-components"
 
 export const StyledFieldset = styled.fieldset`
    width: 100%;
