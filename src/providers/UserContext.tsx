@@ -67,7 +67,6 @@ export const UserProvider = ({ children }: iChildren) => {
   };
 
   const registerSubmit: SubmitHandler<iRegister> = (data) => {
-    console.log(data);
     if (data) {
       // eslint-disable-next-line no-param-reassign
       delete data.confirmPass;
@@ -78,7 +77,6 @@ export const UserProvider = ({ children }: iChildren) => {
   const registerUser = async (newUser: iRegister) => {
     try {
       const response = await api.post('users', newUser);
-      console.log(response.data);
       navigate('/');
     } catch (error) {
       console.error(error);
